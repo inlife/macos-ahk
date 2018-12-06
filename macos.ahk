@@ -1,4 +1,4 @@
-﻿;-----------------------------------------
+;-----------------------------------------
 ; Mac keyboard to Windows Key Mappings
 ;=========================================
 
@@ -65,8 +65,12 @@ return
 Send {Shift down}^f{Shift up}
 return
 
-!r:
+!r::
 Send ^r
+return
+
++!r::
+Send {Shift down}^r{Shift up}
 return
 
 !t::
@@ -77,7 +81,7 @@ return
 Send {Shift down}^t{Shift up}
 return
 
-!l:
+!l::
 Send ^l
 return
 
@@ -110,8 +114,12 @@ return
 Send {Alt down}{F4 down}{Alt up}{F4 up}
 return
 
-!BackSpace::
+#BackSpace::
 Send {Ctrl down}{BackSpace}{Ctrl Up}
+return
+
+!BackSpace::
+Send {Shift down}{Home}{Shift up}{BackSpace}
 return
 
 #!j::
